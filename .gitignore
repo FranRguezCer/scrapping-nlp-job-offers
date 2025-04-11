@@ -1,0 +1,20 @@
+# .gitignore
+
+# Virtual environments
+venv/
+venv-nlp/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# System/editor files
+.DS_Store
+.vscode/
+
+# Datasets (opcional si son pesados)
+*.csv
