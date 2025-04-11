@@ -1,7 +1,5 @@
 # 📊 Data Jobs in Spain – End-to-End Analysis with Web Scraping & NLP
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tu_usuario/NLP-JOB-OFFERS/blob/main/notebooks/EDA_jobs.ipynb)
-
 This project is an **end-to-end pipeline** that scrapes and analyzes job offers for data-related roles in Spain using **real listings from [Tecnoempleo](https://www.tecnoempleo.com/)**.
 
 It combines:
@@ -117,7 +115,12 @@ The main notebook includes all preprocessing, skill detection, and comparisons b
 
 > ⚡ No installation needed — run it directly in the cloud:
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FranRguezCer/scrapping-nlp-job-offers/blob/main/notebooks/EDA_jobs.ipynb)
+<div align="center">
+  <a href="https://colab.research.google.com/github/FranRguezCer/scrapping-nlp-job-offers/blob/main/notebooks/EDA_jobs.ipynb" target="_blank">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height: 40px;">
+  </a>
+</div>
+
 
 ---
 
