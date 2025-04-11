@@ -1,14 +1,18 @@
-# scraper/scrape_offer_details.py
-
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
 
 
-def scrape_offer_details(url):
+def scrape_offer_details(url: str) -> dict[str, str]:
     """
-    Scrape the detailed view of a job offer on Tecnoempleo and return structured data.
+    Scrape the detailed view of a single job offer from Tecnoempleo.
+
+    Args:
+        url: URL of the job offer to scrape.
+
+    Returns:
+        A dictionary containing structured job information, or None if an error occurs.
     """
     try:
         response = requests.get(url)
@@ -40,6 +44,7 @@ def scrape_offer_details(url):
         tech_tags = [tag.text.strip() for tag in tags]
 
         # Meta information (experience, contract, etc.)
+        # THIS IS A PLACEHOLDER FOR POSSIBLE FUTURE UPGRADES
         meta_info = {
             "Experience": "N/A",
             "Contract Type": "N/A",
@@ -69,10 +74,10 @@ def scrape_offer_details(url):
             "Location": location,
             "Date Posted": date_posted,
             "Technologies": ", ".join(tech_tags),
-            "Experience": meta_info["Experience"],
-            "Contract Type": meta_info["Contract Type"],
-            "Job Type": meta_info["Job Type"],
-            "Seniority": meta_info["Seniority"],
+            "Experience": meta_info["Experience"], # PLACEHOLDER FOR POSSIBLE FUTURE UPGRADES
+            "Contract Type": meta_info["Contract Type"], # PLACEHOLDER FOR POSSIBLE FUTURE UPGRADES
+            "Job Type": meta_info["Job Type"], # PLACEHOLDER FOR POSSIBLE FUTURE UPGRADES
+            "Seniority": meta_info["Seniority"], # PLACEHOLDER FOR POSSIBLE FUTURE UPGRADES
             "Description": description,
             "URL": url
         }
@@ -82,7 +87,10 @@ def scrape_offer_details(url):
         return None
 
 
-def main():
+def main() -> None:
+    """
+    Load basic job offers from CSV, enrich each with detailed info, and save the output.
+    """
     input_path = "./data/job_offers_list.csv"
     output_path = "./data/job_offers_detailed.csv"
 

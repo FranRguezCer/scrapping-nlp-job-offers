@@ -12,6 +12,23 @@ It combines:
 
 ---
 
+## 🧭 Context
+
+> _“Job hunting is a job in itself.”_  
+> And just like any other job, it deserves a data-driven approach.
+
+In today's competitive job market — especially in tech and data — job seekers are often overwhelmed by vague requirements, long descriptions, and an ever-growing list of demanded tools. As someone actively exploring remote data roles in Europe, I decided to **analyze the job market the same way I would analyze any dataset in a professional setting**.
+
+This project is more than a technical exercise — it’s a personal initiative to turn job searching into an opportunity to:
+
+- Understand which **skills are truly in demand** (not just buzzwords).
+- Explore how companies describe **remote, hybrid, and on-site work modes**.
+- Build an **end-to-end project** combining web scraping, EDA, and NLP to demonstrate my own skills to possible employers.
+
+By using real job offers from [Tecnoempleo](https://www.tecnoempleo.com), this analysis provides a snapshot of what companies are asking for in **data roles** — offering practical insights for candidates and recruiters alike.
+
+---
+
 ## 🚀 Project Highlights
 
 - 🔎 Scrapes 150 real job offers related to *data roles* (e.g. Data Analyst, Data Scientist, Data Engineer)
@@ -129,6 +146,7 @@ The main notebook includes all preprocessing, skill detection, and comparisons b
 - Applying Named Entity Recognition (NER) or transformer-based models to enrich the analysis.
 - Extracting salary ranges or required years of experience using NLP.
 - Automating updates to track how trends evolve over time.
+- Enhancing the scraping logic to reliably capture currently missing fields such as `Experience`, `Contract Type`, `Seniority`, and `Location`.
 
 ---
 
